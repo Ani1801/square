@@ -1,0 +1,31 @@
+<html>
+	
+		<head>
+			<title>Square Finder</title>
+			<link rel ="stylesheet" href = "css/mystyle.css">
+		</head>
+
+		<body>
+				<div class = "nav">
+					<a href ="index.html">Home</a>
+					< a href = "about.html">About</a>
+				</div>
+				<br/>
+						<h1>Result Page</h1>
+				<br/>
+				<h3 id="msg"></h3>
+
+				<script>
+						let msg = document.getElementById("msg");
+						let res = localStorage.getItem("res");
+						if(res===null)
+						{
+							alert("acting smart..");
+							window.location.href = "index.html";
+					
+						}else {
+								msg.innerHTML= res;
+						}
+				</script>
+		</body>
+</html>
